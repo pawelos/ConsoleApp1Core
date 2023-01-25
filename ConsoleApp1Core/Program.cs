@@ -10,7 +10,8 @@ namespace ConsoleApp1Core
 		{
 			Console.WriteLine(" ----- Calculator Obj ----- ");
 			BaseCalculator bc = new BaseCalculator();
-			Console.WriteLine("Dodawanie: {0} + {1} = {2}",a,b,bc.Add(a,b));
+			Console.WriteLine("Dodawanie: " + bc.Add(a,b));
+			Console.WriteLine("Dodawanie: {0} + {1} = {2}", a, b, bc.Add(a, b));
 			Console.WriteLine("Odejmowanie: {0} - {1} = {2}",a,b,bc.Substruct(a,b));
 			Console.WriteLine("Mnozenie: {0} * {1} = {2}",a,b,bc.Multiply(a,b));
 			Console.WriteLine("Dzielenie: {0} / {1} = {2}",a,b,bc.Devide(a,b));
@@ -87,11 +88,13 @@ namespace ConsoleApp1Core
 			//int a = Int32.Parse(Console.ReadLine());
 			//Console.WriteLine("Podaj b:");
 			//int b = Convert.ToInt32(Console.ReadLine());
-			//CalculatorProc(a,b);
-			//CalculatorObj(a,b);
+			//CalculatorProc(a, b);
+			//CalculatorObj(a, b);
+			// IsFirstInrange();
 
-			IsFirstInrange();
-			Console.WriteLine("Silnia {0}",Silnia(3));
+			AdvancedCalculaor  ac = new AdvancedCalculaor();
+			Console.WriteLine("Silnia = {0}", ac.GetFactorial(3));
+			Console.WriteLine("Silnia = {0}", ac.GetFactorial2(3));
 		}
 
 	}
