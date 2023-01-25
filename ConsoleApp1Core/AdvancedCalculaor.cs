@@ -15,15 +15,6 @@ namespace ConsoleApp1Core
 			else
 				return value * GetFactorial(value - 1);
 		}
-
-		public int GetFactorial2(int value)
-		{
-			int result = 1; 
-			for (int i = 1; i <= value; i++)
-			{
-				result *=  i;
-			}
-			return result;
-		}
+		
 	}
 }
